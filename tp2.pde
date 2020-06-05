@@ -129,7 +129,7 @@ float infocastplayer23=3790;
 
 
 //Movimiento
-float movimiento=5.5;
+float movimiento=1.7;
 
 //imagen de compania
 PImage compania;
