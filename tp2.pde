@@ -1,3 +1,5 @@
+//Basado en Uncharted 2
+
 //fuentes a usar
 PFont info;
 PFont nombre;
