@@ -10,7 +10,7 @@ float nombresXDer=380.5;
 float nombresXDer2=200.5;
 float nombresXDer3=495.5;
 float nombresXDer4=435.5;
-float nombresXDer5=435.5;
+float nombresXDer5=380.5;
 float infocastXDer=380.5;
 
 //valores de X
@@ -90,44 +90,44 @@ float infocast5=3010;
 float infocastplayer5=3010;
 float infocast6=3030;
 float infocastplayer6=3030;
-float infocast7=3030;
-float infocastplayer7=3030;
-float infocast8=3040;
-float infocastplayer8=3040;
-float infocast9=3050;
-float infocastplayer9=3050;
-float infocast10=3100;
-float infocastplayer10=3100;
-float infocast11=3110;
-float infocastplayer11=3110;
-float infocast12=3120;
-float infocastplayer12=3120;
-float infocast13=2130;
-float infocastplayer13=3130;
-float infocast14=2460;
-float infocastplayer14=2460;
-float infocast15=2470;
-float infocastplayer15=2470;
-float infocast16=2480;
-float infocastplayer16=2480;
-float infocast17=2490;
-float infocastplayer17=2490;
-float infocast18=2500;
-float infocastplayer18=2500;
-float infocast19=2510;
-float infocastplayer19=2510;
-float infocast20=2520;
-float infocastplayer20=2520;
-float infocast21=2530;
-float infocastplayer21=2530;
-float infocast22=2540;
-float infocastplayer22=2540;
-float infocast23=2550;
-float infocastplayer23=2550;
+float infocast7=3050;
+float infocastplayer7=3050;
+float infocast8=3070;
+float infocastplayer8=3070;
+float infocast9=3090;
+float infocastplayer9=3090;
+float infocast10=3110;
+float infocastplayer10=3110;
+float infocast11=3130;
+float infocastplayer11=3130;
+float infocast12=3150;
+float infocastplayer12=3150;
+float infocast13=3170;
+float infocastplayer13=3170;
+float infocast14=3190;
+float infocastplayer14=3190;
+float infocast15=3210;
+float infocastplayer15=3210;
+float infocast16=3230;
+float infocastplayer16=3230;
+float infocast17=3250;
+float infocastplayer17=3250;
+float infocast18=3270;
+float infocastplayer18=3270;
+float infocast19=3470;
+float infocastplayer19=3470;
+float infocast20=3520;
+float infocastplayer20=3520;
+float infocast21=3610;
+float infocastplayer21=3610;
+float infocast22=3720;
+float infocastplayer22=3720;
+float infocast23=3790;
+float infocastplayer23=3790;
 
 
 //Movimiento
-float movimiento=3.5;
+float movimiento=5.5;
 
 //imagen de compania
 PImage compania;
@@ -136,18 +136,30 @@ float companiaY=125;
 float ancho=375;
 float alto=245;
 
+//imagen de juego
+PImage juego;
+float juegoX=244;
+float juegoY=4200;
+float ancho2=275;
+float alto2=160;
+
+
+
 void setup(){
   size(720,480);
   background(0);
   info=loadFont("Lato-Bold-18.vlw");//carga la fuente
   nombre=loadFont("Lato-Black-18.vlw");
   compania=loadImage("Naughty_Dog.png");
+  juego=loadImage("juego.png");
   }
  
   void draw(){
   background(0);
   image(compania,companiaX,companiaY,ancho,alto);
   companiaY = companiaY - movimiento;
+  image(juego,juegoX,juegoY,ancho2,alto2);
+  juegoY = juegoY - movimiento;
   
   textFont(info);//declara la fuente que voy a utilizar
   text("Co-Presidents",infoizq,info1);
@@ -394,6 +406,125 @@ void setup(){
     text("Harry Flynn",infocastXDer,infocastplayer6);
   infocastplayer6 = infocastplayer6 - movimiento;
 
+        textFont(info);
+  text("Graham McTavish",infoizq,infocast7);
+  infocast7 = infocast7 - movimiento;
+  textFont(nombre); 
+
+    text("Zoran Lazarevic",infocastXDer,infocastplayer7);
+  infocastplayer7 = infocastplayer7 - movimiento;
+
+         textFont(info);
+  text("Rene Auberjonois",infoizq,infocast8);
+  infocast8 = infocast8 - movimiento;
+  textFont(nombre); 
+    text("Karl Schäfer",infocastXDer,infocastplayer8);
+  infocastplayer8 = infocastplayer8 - movimiento;
+
+         textFont(info);
+  text("Pema Dhondup",infoizq,infocast9);
+  infocast9 = infocast9 - movimiento;
+  textFont(nombre); 
+    text("Tenzin",infocastXDer,infocastplayer9);
+  infocastplayer9 = infocastplayer9 - movimiento;
+       
+         
+   textFont(info);
+  text("Greg Myhre",infoizq,infocast10);
+  infocast10 = infocast10 - movimiento;
+  textFont(nombre); 
+    text("Jeff",infocastXDer,infocastplayer10);
+  infocastplayer10 = infocastplayer10 - movimiento;
+
+         textFont(info);
+  text("Simon Templeman",infoizq,infocast11);
+  infocast11 = infocast11 - movimiento;
+  textFont(nombre); 
+    text("Gabriel Roman",infocastXDer,infocastplayer11);
+  infocastplayer11 = infocastplayer11 - movimiento;
+  
+          textFont(info);
+  text("James Sie",infoizq,infocast12);
+  infocast12 = infocast12 - movimiento;
+  textFont(nombre); 
+    text("Eddy Raja",infocastXDer,infocastplayer12);
+  infocastplayer12 = infocastplayer12 - movimiento;
+
+         textFont(info);
+  text("Robin Atkin Downes",infoizq,infocast13);
+  infocast13 = infocast13 - movimiento;
+  textFont(nombre); 
+    text("  Atoq Navarro",infocastXDer,infocastplayer13);
+  infocastplayer13 = infocastplayer13 - movimiento;
+
+         textFont(info);
+  text("Carlos Ferro",infoizq,infocast14);
+  infocast14 = infocast14 - movimiento;
+  textFont(nombre); 
+    text("Mercenary",infocastXDer,infocastplayer14);
+  infocastplayer14 = infocastplayer14 - movimiento;
+
+         textFont(info);
+  text("Matthew Yang King",infoizq,infocast15);
+  infocast15 = infocast15 - movimiento;
+  textFont(nombre); 
+    text("Pirate",infocastXDer,infocastplayer15);
+  infocastplayer15 = infocastplayer15 - movimiento;
+
+         textFont(info);
+  text("Fred Tatasciore",infoizq,infocast16);
+  infocast16 = infocast16 - movimiento;
+  textFont(nombre); 
+    text("Daniel Pinkerton",infocastXDer,infocastplayer16);
+  infocastplayer16 = infocastplayer16 - movimiento;
+
+         textFont(info);
+  text("Gwendoline Yeo",infoizq,infocast17);
+  infocast17 = infocast17 - movimiento;
+  textFont(nombre); 
+    text("Rika Raja",infocastXDer,infocastplayer17);
+  infocastplayer17 = infocastplayer17 - movimiento;
+
+         textFont(info);
+  text("Michael Benyaer\nGregg Berger\nSteve Blum\nDimitri Diatchencko \nRobin Atkin Downes \nMichael Gough\nJames Horan\nYuri Lowenthal\nFred Tatasciore",infoizq,infocast18);
+  infocast18 = infocast18 - movimiento;
+  textFont(nombre); 
+    text("Serbian Soldier\nSerbian Soldier\nSerbian Soldier\n   Serbian Soldier\n   Serbian Soldier\n  Serbian Soldier\nSerbian Soldier\nSerbian Soldier\nSerbian Soldier\n",infocastXDer,infocastplayer18);
+  infocastplayer18 = infocastplayer18 - movimiento;
+
+         textFont(info);
+  text("Steve Blum\nFred Tatasciore",infoizq,infocast19);
+  infocast19 = infocast19 - movimiento;
+  textFont(nombre); 
+    text("Guardian\nGuardian",infocastXDer,infocastplayer19);
+  infocastplayer19 = infocastplayer19 - movimiento;
+
+         textFont(info);
+  text("Alex Demir\nSerdar Kalsin\nOscar Oden\nMurat Uludag",infoizq,infocast20);
+  infocast20 = infocast20 - movimiento;
+  textFont(nombre); 
+    text("Turkish Guard\nTurkish Guard\nTurkish Guard\nTurkish Guard",infocastXDer,infocastplayer20);
+  infocastplayer20 = infocastplayer20 - movimiento;
+
+           textFont(info);
+  text("Dechen Choezom\nPema Dhondup\nYangchen Dolkar\nNamgyal Kyulo\nTenzing Tsering",infoizq,infocast21);
+  infocast21 = infocast21 - movimiento;
+  textFont(nombre); 
+    text("Tibetan Villager\nTibetan Villager\nTibetan Villager\nTibetan Villager\nTibetan Villager",infocastXDer,infocastplayer21);
+  infocastplayer21 = infocastplayer21 - movimiento;
 
 
+           textFont(info);
+  text("Prasadananda Das\nTenzing Tsering\nToufiq Tulsiram",infoizq,infocast22);
+  infocast22 = infocast22 - movimiento;
+  textFont(nombre); 
+    text("Nepali Resistance Fighter\nNepali Resistance Fighter\nNepali Resistance Fighter",infocastXDer,infocastplayer22);
+  infocastplayer22 = infocastplayer22 - movimiento;
+
+         textFont(info);
+  text("Theo Balestra\nLola Balestra\nAldan Balestra\nNathan Levitt\nLauren Levitt",infoizq,infocast23);
+  infocast23 = infocast23 - movimiento;
+  textFont(nombre); 
+    text("Tibetian Child\nTibetian Child\nTibetian Child\nTibetian Child\nTibetian Child",infocastXDer,infocastplayer23);
+  infocastplayer23 = infocastplayer23 - movimiento;
   }
