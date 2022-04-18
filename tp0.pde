@@ -1,9 +1,14 @@
+//
+Alumno: Prado Greco Manuel Nicolas
+Legajo:80412/9
+
 PFont fuente;
 void setup(){
   size(600, 600);
   background(255);
   fuente = loadFont("Dexter.vlw");
-  
+
+//Cara
   noFill();
   strokeWeight(3);
   bezier(183, 146, 162, 241, 25, 359, 151, 447);
