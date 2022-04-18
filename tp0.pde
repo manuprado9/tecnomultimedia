@@ -1,5 +1,6 @@
 //Alumno: Prado Greco Manuel Nicolas
 //Legajo:80412/9
+//Comisión 3 - David Bedoian - 14hs
 
 PFont fuente;
 void setup(){
