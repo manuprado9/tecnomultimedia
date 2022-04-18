@@ -1,6 +1,5 @@
-//
-Alumno: Prado Greco Manuel Nicolas
-Legajo:80412/9
+//Alumno: Prado Greco Manuel Nicolas
+//Legajo:80412/9
 
 PFont fuente;
 void setup(){
