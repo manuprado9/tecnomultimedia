@@ -1,9 +1,10 @@
 
+//Alumno: Manuel Nicolas Prado Greco
+//Legajo: 80412/9
+//Comision 3 - David
 //Basado en Uncharted 2
 //Pantallas
 int Screen = 0;
-//Final
-int reincio;
 //fuentes a usar
 PFont info;
 PFont nombre;
@@ -164,7 +165,6 @@ void setup(){
   menufondo=loadImage("main.png");
   compania=loadImage("Naughty_Dog.png");
   juego=loadImage("juego.png");
-  reincio=height/5;
 }
 
 
